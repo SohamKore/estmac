@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var nav = document.querySelector("nav");
-    nav.style.display = "none";
+
 
     var getQuoteBtn = document.querySelector(".cta_btn_hero");
     var getQuoteBtnNav = document.querySelector(".cta_btn");

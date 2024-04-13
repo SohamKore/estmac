@@ -247,5 +247,10 @@
         background-color: #4D43EA;
     }
 
+    .social-media-icon {
+        width: auto;
+        margin: 10px;
+    }
+
 
 }
