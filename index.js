@@ -39,7 +39,17 @@ function getQuoteLogic() {
 
 
 }
-function snackbar(){
+function snackbar() {
     var nav = document.querySelector("nav");
-    nav.style.display = "flex";
+    // Get the computed style of the nav element
+    var navStyle = window.getComputedStyle(nav);
+
+    // Check if the display property is currently set to 'flex'
+    if (navStyle.display === 'flex') {
+        // If it's already flex, change it to 'none' to hide the nav
+        nav.style.display = "none";
+    } else {
+        // If it's not flex, change it to 'flex' to show the nav
+        nav.style.display = "flex";
+    }
 }
